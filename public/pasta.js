@@ -36,22 +36,22 @@ if (typeof require !== 'undefined') {
 
 const PASTA_CONFIG = {
    // User configurable options --------------------------------------------------------------------------------
-   "filter": '&q=id:edi.2302.1', // Filter results on a unique keyword of a research group
+   "filter": '&q=id:edi.2302', // Filter results on a unique keyword of a research group
    "brandingText": "NMFWRI Uplands Data Catalog",
    "logoAltText": "", //
    "showAbstracts": true, // true if we should show abstracts in search results
    "abstractLimit": 750, // Limit the number of characters in the abstract
    "showUserStoriesLink": true, // If false, do not display the user stories link for datasets
    "showThumbnails": true, // If false, do not display dataset thumbnail images
-   "showBanner": true, // If false, the top banner will not be displayed
-   "hideMapView": false, // true to hide the map view
+   "showBanner": false, // If false, the top banner will not be displayed
+   "hideMapView": true, // true to hide the map view
    "facetVisibility": { // Facet visibility toggles
       "creator": true,
       "keyword": true,
       "project": true,
       "location": true,  // Must be true to enable location-based map filtering
-      "taxon": true,
-      "commonName": true
+      "taxon": false,
+      "commonName": false
    },
    // Internal use only ---------------------------------------------------------------------------------------------
    "server": "https://pasta.lternet.edu/package/search/eml?", // PASTA server
