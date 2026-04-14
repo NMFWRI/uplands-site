@@ -44,7 +44,7 @@ const PASTA_CONFIG = {
    "showUserStoriesLink": true, // If false, do not display the user stories link for datasets
    "showThumbnails": true, // If false, do not display dataset thumbnail images
    "showBanner": true, // If false, the top banner will not be displayed
-   "hideMapView": true, // true to hide the map view
+   "hideMapView": false, // true to hide the map view
    "facetVisibility": { // Facet visibility toggles
       "creator": true,
       "keyword": true,
