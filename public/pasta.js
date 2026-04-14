@@ -37,13 +37,13 @@ if (typeof require !== 'undefined') {
 const PASTA_CONFIG = {
    // User configurable options --------------------------------------------------------------------------------
    "filter": '&q=id:edi.2302', // Filter results on a unique keyword of a research group
-   "brandingText": "NMFWRI Uplands Data Catalog",
+   "brandingText": "NMFWRI Data Catalog",
    "logoAltText": "", //
    "showAbstracts": true, // true if we should show abstracts in search results
    "abstractLimit": 750, // Limit the number of characters in the abstract
    "showUserStoriesLink": true, // If false, do not display the user stories link for datasets
    "showThumbnails": true, // If false, do not display dataset thumbnail images
-   "showBanner": false, // If false, the top banner will not be displayed
+   "showBanner": true, // If false, the top banner will not be displayed
    "hideMapView": true, // true to hide the map view
    "facetVisibility": { // Facet visibility toggles
       "creator": true,
@@ -305,7 +305,7 @@ function renderFacetDropdown(items, selected, counts, className, searchTerm, dro
       <input type="text" class="facet-search" placeholder="Select..." value="${safeSearchTerm}"
         style="width:95%;padding:7px 10px;border:1.5px solid #c2c7d0;border-radius:0;background:#f7f8fa;box-shadow:0 1px 2px rgba(0,0,0,0.03);font-size:1em;transition:border 0.2s;outline:none;"
         data-dropdown-id="${dropdownId}"
-        onfocus="this.style.borderColor='#4a90e2'" onblur="this.style.borderColor='#c2c7d0'"
+        onfocus="this.style.borderColor='#ebfaf0'" onblur="this.style.borderColor='#c2c7d0'"
         aria-label="Select within this facet category"
       >
     </div>
